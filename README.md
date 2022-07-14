@@ -31,8 +31,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Heres some text for the project.
 
 
@@ -42,40 +40,31 @@ Heres some text for the project.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/marcusntnu/mlp_lenet_bathnorm.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+### Prerequisites
+
+The notebooks run with jupyter and tensorflow/keras. They also work in colab.
+
+* Jupyter notebook
+* Tensorflow
+  ```sh
+  pip install tensorflow
+  ```
+* Keras-tuner
+  ```sh
+  pip install keras-tuner --upgrade
+  ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+There are three notebooks, one for each architecture (LeNet CNN and MLP's) and one merged. Each notebook has a tuning section at the bottom where the tuning is commented out.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -83,9 +72,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-
+Self-evalution on further work that can be done on this project.
 - [ ] More rigorous MLP architecture design
-- [ ] Testing and tuning more hyperparameters. Also activation function positioning and batch size. 
+- [ ] Testing and tuning more hyperparameters. Also activation function positioning and batch size.
 - [ ] Further experimenting with other datasets.
 
 See the [open issues](https://github.com/marcusntnu/mlp_lenet_bathnorm/issues) for a full list of proposed features (and known issues).
@@ -107,8 +96,8 @@ Project Link: [https://github.com/marcusntnu/mlp_lenet_bathnorm](https://github.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Research paper on Training BatchNorm and Only BatchNorm](https://arxiv.org/abs/2003.00152)
+* [Simple MNIST Keras example](https://keras.io/examples/vision/mnist_convnet/)
+* [Sayak Paul's experiments on training only batch norm](https://wandb.ai/sayakpaul/training-bn-only/reports/How-powerful-the-randrom-features-of-a-CNN-can-be%3F--VmlldzoxMTIxODA)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
