@@ -30,7 +30,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Part of a project in Deep Learning Applied AI at the University of Sapienza spring of 2022. The starting point was the paper "Training BatchNorm and only BatchNorm" where they investigated the effects of freezing all but batch normalization layers on residual neural nets. This project experiments with MLP's of varying dimensions for comparison. Also implemented a shallow CNN (mainly for seeing effects of a shallow non-residual CNN, but also for seeing effects of tuning on BatchNorm performance).
+Part of a project in Deep Learning Applied AI at the University of Sapienza spring of 2022. The starting point was the paper "Training BatchNorm and only BatchNorm" where they investigated the effects of freezing all but batch normalization layers on residual neural nets. This project experiments with MLP's of varying dimensions on MNIST for comparison (the implementation also works for CIFAR-10). Also implemented a shallow CNN (mainly for seeing effects of a shallow non-residual CNN, but also for seeing effects of tuning on BatchNorm performance).
 
 Findings suggest that BatchNorm does offer greater performance than the same number of random parameters. At least when going over a certain number of parameters, and effects generally increase as parameters increase from then on.
 
@@ -60,6 +60,8 @@ The notebooks run with jupyter and tensorflow/keras. They also work fine in goog
 ## Usage
 
 There are two notebooks, one for each architecture (LeNet CNN and MLP's). Each notebook has a tuning section at the bottom where the tuning is commented out. For this project the MLP notebook is the interesting one.
+
+Using MNIST or CIFAR-10 is decided by setting a variable value at the top.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
