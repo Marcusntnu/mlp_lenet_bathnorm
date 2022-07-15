@@ -1,4 +1,4 @@
-# Training BatchNorm and Only BatchNorm: Affine parameter effecst in MLP's
+# Training BatchNorm and Only BatchNorm: Affine parameter effects in MLP's
 <div id="top"></div>
 
 
@@ -30,8 +30,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Part of a project in Deep Learning Applied AI at the University of Sapienza spring of 2022. The starting point was the paper by "Training BatchNorm and only BatchNorm" where they investigated the effects of training only batch normalization
-layers on residual neural nets.
+Part of a project in Deep Learning Applied AI at the University of Sapienza spring of 2022. The starting point was the paper "Training BatchNorm and only BatchNorm" where they investigated the effects of freezing all but batch normalization layers on residual neural nets. This project experiments with MLP's of varying dimensions for comparison. Also implemented a shallow CNN (mainly for seeing effects of a shallow non-residual CNN, but also for seeing effects of tuning on BatchNorm performance).
+
+Findings suggest that BatchNorm does offer greater performance than the same number of random parameters. At least when going over a certain number of parameters, and effects generally increase as parameters increase from then on.
 
 <!-- GETTING STARTED -->
 ## Getting Started
