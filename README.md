@@ -35,9 +35,7 @@ layers on residual neural nets.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-The notebook are standard tensorflow/keras notebooks. For understanding more about what they are about I recommend reading the paper on training BatchNorm and only BatchNorm (link in acknowledgments).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+The notebooks are standard tensorflow/keras jupyter notebooks. For understanding more about what they are about I recommend reading the paper on training BatchNorm and only BatchNorm (link in acknowledgments).
 
 
 ### Prerequisites
