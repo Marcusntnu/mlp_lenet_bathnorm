@@ -1,4 +1,4 @@
-# Training BatchNorm and Only BatchNorm: Affine parameter learning for MLP's
+# Training BatchNorm and Only BatchNorm: Affine parameter effecst in MLP's
 <div id="top"></div>
 
 
@@ -30,30 +30,26 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Heres some text for the project.
-
+Part of a project in Deep Learning Applied AI at the University of Sapienza spring of 2022. The starting point was the paper by "Training BatchNorm and only BatchNorm" where they investigated the effects of training only batch normalization
+layers on residual neural nets.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
+The notebook are standard tensorflow/keras notebooks. For understanding more about what they are about I recommend reading the paper on training BatchNorm and only BatchNorm (link in acknowledgments).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ### Prerequisites
 
-The notebooks run with jupyter and tensorflow/keras. They also work in colab.
+The notebooks run with jupyter and tensorflow/keras. They also work fine in google colab.
 
 * Jupyter notebook
 * Tensorflow
   ```sh
   pip install tensorflow
   ```
-* Keras-tuner
+* Keras-tuner if you want to do tuning. If this becomes an issue feel free to comment it out.
   ```sh
   pip install keras-tuner --upgrade
   ```
@@ -64,7 +60,7 @@ The notebooks run with jupyter and tensorflow/keras. They also work in colab.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-There are three notebooks, one for each architecture (LeNet CNN and MLP's) and one merged. Each notebook has a tuning section at the bottom where the tuning is commented out.
+There are two notebooks, one for each architecture (LeNet CNN and MLP's). Each notebook has a tuning section at the bottom where the tuning is commented out. For this project the MLP notebook is the interesting one.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -73,9 +69,11 @@ There are three notebooks, one for each architecture (LeNet CNN and MLP's) and o
 <!-- ROADMAP -->
 ## Roadmap
 Self-evalution on further work that can be done on this project.
-- [ ] More rigorous MLP architecture design
-- [ ] Testing and tuning more hyperparameters. Also activation function positioning and batch size.
-- [ ] Further experimenting with other datasets.
+- [ ] Optimize the random parameter freezing/unfreezing. Only in Keras for R is it possible to freeze certain weights, this could come soon and easily speed up runtime for the larger nets.
+- [ ] More rigorous MLP architecture design. As it is the dimensions and contents are somewhat simple and arbitrarily picked based on getting initial results.
+- [ ] Testing and tuning more hyperparameters. Also activation function positioning (before or after) and batch sizing.
+- [ ] Further experimenting with other datasets. Also extending it to non-computer vision sets.
+- [ ] Experiment with other architectures.
 
 See the [open issues](https://github.com/marcusntnu/mlp_lenet_bathnorm/issues) for a full list of proposed features (and known issues).
 
